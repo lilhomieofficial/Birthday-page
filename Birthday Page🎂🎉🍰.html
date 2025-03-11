@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Birthday Celebration for Purity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #232526, #414345);
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .blessing {
+            font-size: 1.3em;
+            font-style: italic;
+            margin: 20px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .bible-verse {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .active {
+            display: block;
+        }
+        .playlist {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Happy Birthday, Purity🥳🥳! 🎉</h1>
+        <p class="blessing">Today is a special day because a queen was born! You are a light to those around you, and I pray that this year brings you joy, success, and abundant blessings. 🎂💖</p>
+        
+        <p>You are fearfully and wonderfully made (Psalm 139:14), and I pray that you always remember the precious gift of your life. May God bless you and keep you, and may His face shine upon you (Numbers 6:24-26). 🙏✨</p>
+        
+        <div class="bible-verse">"For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, plans to give you hope and a future." – Jeremiah 29:11</div>
+        
+        <p>Stay strong, stay beautiful, and keep shining your light. You are loved, appreciated, and celebrated today and always. 💕🎈</p>
+        
+        <div class="slideshow-container">
+            <h2>✨ A Journey Through Beautiful Memories ✨</h2>
+            <img class="slide active" src="file:///D:/Lil%20Homie/Github/birthday-page/folder2/picture1.jpg" alt="picture1">
+            <img class="slide" src="file:///D:/Lil%20Homie/Github/birthday-page/folder2/picture2.jpg" alt="picture2">
+            <img class="slide" src="file:///D:/Lil%20Homie/Github/birthday-page/folder2/picture6.jpg" alt="picture6">
+            <img class="slide" src="file:///D:/Lil%20Homie/Github/birthday-page/folder2/picture4.jpg" alt="picture4">
+            <img class="slide" src="file:///D:/Lil%20Homie/Github/birthday-page/folder2/picture5.jpg" alt="picture5">
+            
+            
+
+        </div>
+
+        <div class="playlist">
+            <h3>🎶 Birthday Vibes Playlist 🎶</h3>
+            <p>Here’s a special playlist to brighten your day! 🎵</p>
+           <iframe width="100%" height="500" src="https://www.youtube.com/embed/VDkLq_Sl7h0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+    </div>
+
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        let index = 0;
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            index++;
+            if (index > slides.length) { index = 1; }
+            slides[index - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+        showSlides();
+    </script>
+</body>
+
+</html>
